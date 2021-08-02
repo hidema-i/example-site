@@ -8,9 +8,29 @@
     <title>example</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
+
+    <!-- big-size -->
+    <section class="item item-l item-shoes">
+        <a href="#">
+            <img class="image" src="images/dior.jpg" alt="aaa">
+            <div class="category">AAAA</div>
+            <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem </p>
+        </a>
+    </section>
+
+    <section class="item item-m item-shoes">
+        <a href="#">
+            <img class="image" src="images/off2.png" alt="aaa">
+            <div class="category">AAAA</div>
+            <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem </p>
+        </a>
+    </section>
+    <!--big-size -->
+
     <!-- small-size -->
     <section class="item item-doll">
         <a href="#">
@@ -80,6 +100,20 @@
     </section>
     <section class="item item-shoes">
         <a href="#">
+            <img class="image" src="images/peter-albanese-Gqlmzo-q6mY-unsplash.jpg" alt="aaa">
+            <div class="category">AAAA</div>
+            <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem </p>
+        </a>
+    </section>
+    <section class="item item-shoes">
+        <a href="#">
+            <img class="image" src="images/peter-albanese-Gqlmzo-q6mY-unsplash.jpg" alt="aaa">
+            <div class="category">AAAA</div>
+            <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem </p>
+        </a>
+    </section>
+    <section class="item item-shoes">
+        <a href="#">
             <img class="image" src="images/paul-volkmer-updW-QUccFE-unsplash.jpg" alt="aaa">
             <div class="category">AAAA</div>
             <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem </p>
@@ -104,33 +138,21 @@
     </section>
     <!-- ここまでmiddle-size -->
 
-    <!-- big-size -->
-    <section class="item item-l item-shoes">
-        <a href="#">
-            <img class="image" src="images/dior.jpg" alt="aaa">
-            <div class="category">AAAA</div>
-            <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem </p>
-        </a>
-    </section>
 
-    <section class="item item-l item-hobby">
-        <a href="#">
-            <img class="image" src="images/hobby.jpg" alt="aaa">
-            <div class="category">AAAA</div>
-            <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem </p>
-        </a>
-    </section>
-    <!-- ここまでbig-size -->
 
     <!-- masonry -->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <script>
-        new Masonry('body', {
-            itemSelector: '.item',
-            columnWidth: 180,
-            gutter: 4
-        });
+        window.onload = function () {
+            new Masonry('body', {
+                itemSelector: '.item',
+                columnWidth: 180,
+                gutter: 4
+            });
+        };
     </script>
+
+    
 </body>
 
 </html>
